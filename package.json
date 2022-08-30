@@ -1,0 +1,19 @@
+{
+  "name": "@croatialu/gi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "gi": "index.js"
+  },
+  "files": ["./index.js"],
+  "scripts": {
+    "release": "release-it"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "release-it": "^15.4.0"
+  }
+}
