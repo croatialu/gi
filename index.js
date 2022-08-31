@@ -103,7 +103,7 @@ const eachChildRepository = (entryPath, callback, { excludeDir = [], level = 1 }
 function main() {
   const config = getConfig(currentAbsPath)
 
-  if (!config) return
+  if (!config) return log('❎未找到配置文件')
 
   const { name, email, level = 1, excludeDir = [] } = config
 
