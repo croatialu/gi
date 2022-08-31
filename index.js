@@ -95,7 +95,7 @@ const eachChildRepository = (entryPath, callback, { excludeDir = [], level = 1 }
     if (isRepository(targetPath)) {
       callback(targetPath)
     } else {
-      eachChildRepository(targetPath, callback, level - 1)
+      eachChildRepository(targetPath, callback, { excludeDir, level: level - 1 })
     }
   })
 }
