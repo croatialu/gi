@@ -33,7 +33,7 @@ const getConfig = (path) => {
     const newPath = resolve(path, '../')
 
     if (newPath === path) return null
-    getConfig(newPath)
+    return getConfig(newPath)
   }
 
 }
